@@ -14,6 +14,7 @@
 		2C633DF7260A51420058666E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C633DF5260A51420058666E /* LaunchScreen.storyboard */; };
 		2C633E02260A51430058666E /* ChooseYourAdventureConceptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C633E01260A51430058666E /* ChooseYourAdventureConceptTests.swift */; };
 		2C633E0D260A51430058666E /* ChooseYourAdventureConceptUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C633E0C260A51430058666E /* ChooseYourAdventureConceptUITests.swift */; };
+		2C633E1B260A51D60058666E /* NewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C633E1A260A51D60058666E /* NewPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2C633E08260A51430058666E /* ChooseYourAdventureConceptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChooseYourAdventureConceptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C633E0C260A51430058666E /* ChooseYourAdventureConceptUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseYourAdventureConceptUITests.swift; sourceTree = "<group>"; };
 		2C633E0E260A51430058666E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C633E1A260A51D60058666E /* NewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				2C633DEC260A513E0058666E /* AppDelegate.swift */,
 				2C633DEE260A513E0058666E /* ViewController.swift */,
 				2C633DF0260A513E0058666E /* Main.storyboard */,
+				2C633E1A260A51D60058666E /* NewPage.swift */,
 				2C633DF3260A51420058666E /* Assets.xcassets */,
 				2C633DF5260A51420058666E /* LaunchScreen.storyboard */,
 				2C633DF8260A51420058666E /* Info.plist */,
@@ -258,6 +261,7 @@
 			files = (
 				2C633DEF260A513E0058666E /* ViewController.swift in Sources */,
 				2C633DED260A513E0058666E /* AppDelegate.swift in Sources */,
+				2C633E1B260A51D60058666E /* NewPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

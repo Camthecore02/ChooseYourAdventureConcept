@@ -10,11 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var pageImage: UIImageView!
+    @IBOutlet weak var pageText: UITextView!
+    @IBOutlet weak var pageButtons: UISegmentedControl!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let samplePage = NewPage(pageImage: "maskedCat", pageText: "Meow", pageButtons: ["say hello", "yell the cat", "steal the cats mask"])
+        loadPage(whatPage: samplePage)
     }
-
+    func loadPage(whatPage: NewPage){
+        pageImage.image = UIImage(named: whatPage.pageImage)
+        pageText.text = whatPage.pageText
+       
+    }
 
 }
 
