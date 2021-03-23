@@ -11,9 +11,6 @@ import Foundation
 struct NewPage {
     var pageImage: String
     var pageText: String
-    var buttonOne: String
-    var buttonTwo: String
-    var buttonThree: String
-    var buttonFour: String
+    var buttonTitles: [String]
 }
 

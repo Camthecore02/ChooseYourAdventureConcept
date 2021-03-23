@@ -22,16 +22,30 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let samplePage = NewPage(pageImage: "maskedCat", pageText: "Meow", buttonOne: "Pet", buttonTwo: "Ignore", buttonThree: "Steal Mask", buttonFour: "Pick Up"
+        let samplePage = NewPage(pageImage: "maskedCat", pageText: "Meow",  buttonTitles: ["yes", "no"]
         )
         loadPage(whatPage: samplePage)
     }
     func loadPage(whatPage: NewPage){
         pageImage.image = UIImage(named: whatPage.pageImage)
         pageText.text = whatPage.pageText
-       // buttonOne.text = whatPage.buttonOne
        
-    }
+       //switch case if else if. if array.count hide all but 2, then update array
+        if whatPage.buttonTitles.count == 1{
+            buttonTwo.titleLabel?.text = ""
+            buttonThree.titleLabel?.text = ""
+            ButtonFour.titleLabel?.text = ""
+            buttonOne.titleLabel?.text = whatPage.buttonTitles[0]
+            
+        } else if whatPage.buttonTitles.count == 2{
+           // buttonTwo.isHidden = true
+            buttonThree.titleLabel?.text = ""
+            ButtonFour.titleLabel?.text = ""
+            buttonOne.setTitle(whatPage.buttonTitles[0], for: .normal)
+            buttonTwo.setTitle(whatPage.buttonTitles[1], for: .normal)
+            //button.setTitle("Button Title", for: .normal)
+    } 
 
 }
 
+}

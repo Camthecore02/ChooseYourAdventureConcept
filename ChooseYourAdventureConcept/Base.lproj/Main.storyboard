@@ -21,49 +21,61 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2A3-ky-Mcb">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SUs-EY-cfv">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="327"/>
-                                    </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZBT-bi-aJe">
-                                        <rect key="frame" x="0.0" y="327" width="414" height="245.5"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzm-YW-epE">
-                                        <rect key="frame" x="0.0" y="572.5" width="414" height="61.5"/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ect-at-4OB">
-                                        <rect key="frame" x="0.0" y="634" width="414" height="61.5"/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E77-tD-28L">
-                                        <rect key="frame" x="0.0" y="695.5" width="414" height="61"/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfR-Jn-BGz">
-                                        <rect key="frame" x="0.0" y="756.5" width="414" height="61.5"/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JR8-D9-pZY">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="270"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SUs-EY-cfv">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="270"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iWj-zO-XiV">
+                                        <rect key="frame" x="0.0" y="270" width="414" height="270"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZBT-bi-aJe">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="270"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aAS-2O-6oS">
+                                        <rect key="frame" x="0.0" y="540" width="414" height="278"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzm-YW-epE">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="69.5"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ect-at-4OB">
+                                                <rect key="frame" x="0.0" y="69.5" width="414" height="69.5"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E77-tD-28L">
+                                                <rect key="frame" x="0.0" y="139" width="414" height="69.5"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfR-Jn-BGz">
+                                                <rect key="frame" x="0.0" y="208.5" width="414" height="69.5"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="ZBT-bi-aJe" firstAttribute="height" secondItem="2A3-ky-Mcb" secondAttribute="height" multiplier="0.3" id="4zq-oq-Hxu"/>
-                                    <constraint firstItem="E77-tD-28L" firstAttribute="height" secondItem="2A3-ky-Mcb" secondAttribute="height" multiplier="0.075" id="aCk-TJ-7dK"/>
-                                    <constraint firstItem="SUs-EY-cfv" firstAttribute="height" secondItem="2A3-ky-Mcb" secondAttribute="height" multiplier="0.4" id="aio-pD-T3f"/>
-                                    <constraint firstItem="OfR-Jn-BGz" firstAttribute="height" secondItem="2A3-ky-Mcb" secondAttribute="height" id="fMw-ko-72H"/>
-                                    <constraint firstItem="Gzm-YW-epE" firstAttribute="height" secondItem="2A3-ky-Mcb" secondAttribute="height" multiplier="0.075" id="pEh-r7-kcO"/>
-                                    <constraint firstItem="ect-at-4OB" firstAttribute="height" secondItem="2A3-ky-Mcb" secondAttribute="height" multiplier="0.075" id="pLz-dN-5j3"/>
+                                    <constraint firstItem="aAS-2O-6oS" firstAttribute="height" secondItem="2A3-ky-Mcb" secondAttribute="height" multiplier="0.33" id="KAw-fp-A7V"/>
+                                    <constraint firstItem="JR8-D9-pZY" firstAttribute="height" secondItem="2A3-ky-Mcb" secondAttribute="height" multiplier="0.33" id="fEV-Cs-ZKT"/>
+                                    <constraint firstItem="iWj-zO-XiV" firstAttribute="height" secondItem="2A3-ky-Mcb" secondAttribute="height" multiplier="0.33" id="iUS-3E-UHd"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="2A3-ky-Mcb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4sn-S4-UTU"/>
-                            <constraint firstItem="2A3-ky-Mcb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FL0-MP-Ty9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2A3-ky-Mcb" secondAttribute="trailing" id="jb4-c4-wC6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2A3-ky-Mcb" secondAttribute="bottom" id="juX-84-cfC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2A3-ky-Mcb" secondAttribute="bottom" id="8jY-30-xCV"/>
+                            <constraint firstItem="2A3-ky-Mcb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DZO-F2-i8O"/>
+                            <constraint firstItem="2A3-ky-Mcb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Fbe-34-wIr"/>
+                            <constraint firstAttribute="trailing" secondItem="2A3-ky-Mcb" secondAttribute="trailing" id="SmV-AN-mTI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
