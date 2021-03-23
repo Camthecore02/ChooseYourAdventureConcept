@@ -22,14 +22,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let samplePage = NewPage(pageImage: "maskedCat", pageText: "Meow" //buttonOne: "Pet", buttonTwo: "Ignore", buttonThree: "Steal Mask", buttonFour: "Pick Up"
+        let samplePage = NewPage(pageImage: "maskedCat", pageText: "Meow", buttonOne: "Pet", buttonTwo: "Ignore", buttonThree: "Steal Mask", buttonFour: "Pick Up"
         )
         loadPage(whatPage: samplePage)
     }
     func loadPage(whatPage: NewPage){
         pageImage.image = UIImage(named: whatPage.pageImage)
         pageText.text = whatPage.pageText
-        
+       // buttonOne.text = whatPage.buttonOne
        
     }
 
