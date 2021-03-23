@@ -40,11 +40,11 @@
                                         <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E77-tD-28L">
-                                        <rect key="frame" x="0.0" y="695.5" width="414" height="61.5"/>
+                                        <rect key="frame" x="0.0" y="695.5" width="414" height="61"/>
                                         <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfR-Jn-BGz">
-                                        <rect key="frame" x="0.0" y="757" width="414" height="61"/>
+                                        <rect key="frame" x="0.0" y="756.5" width="414" height="61.5"/>
                                         <state key="normal" title="Button"/>
                                     </button>
                                 </subviews>
@@ -72,6 +72,8 @@
                         <outlet property="buttonOne" destination="Gzm-YW-epE" id="avW-65-P6m"/>
                         <outlet property="buttonThree" destination="E77-tD-28L" id="EUa-C5-Tnw"/>
                         <outlet property="buttonTwo" destination="ect-at-4OB" id="KAW-Is-JbH"/>
+                        <outlet property="pageImage" destination="SUs-EY-cfv" id="x8O-Bo-rVK"/>
+                        <outlet property="pageText" destination="ZBT-bi-aJe" id="lm4-jh-6rt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
