@@ -44,8 +44,25 @@ class ViewController: UIViewController {
             buttonOne.setTitle(whatPage.buttonTitles[0], for: .normal)
             buttonTwo.setTitle(whatPage.buttonTitles[1], for: .normal)
             //button.setTitle("Button Title", for: .normal)
-    } 
-
+        } else if whatPage.buttonTitles.count == 3{
+            // buttonTwo.isHidden = true
+            buttonThree.setTitle(whatPage.buttonTitles[2], for: .normal)
+            ButtonFour.titleLabel?.text = ""
+            buttonOne.setTitle(whatPage.buttonTitles[0], for: .normal)
+            buttonTwo.setTitle(whatPage.buttonTitles[1], for: .normal)
+        } else if whatPage.buttonTitles.count == 4{
+            // buttonTwo.isHidden = true
+            buttonThree.setTitle(whatPage.buttonTitles[2], for: .normal)
+            ButtonFour.setTitle(whatPage.buttonTitles[3], for: .normal)
+            buttonOne.setTitle(whatPage.buttonTitles[0], for: .normal)
+            buttonTwo.setTitle(whatPage.buttonTitles[1], for: .normal)
+        } else {
+            buttonTwo.titleLabel?.text = ""
+            buttonThree.titleLabel?.text = ""
+            ButtonFour.titleLabel?.text = ""
+            buttonOne.titleLabel?.text = ""
+        }
 }
 
 }
+
