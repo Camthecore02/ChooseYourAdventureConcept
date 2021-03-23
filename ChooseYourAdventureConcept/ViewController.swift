@@ -12,7 +12,10 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var pageImage: UIImageView!
     @IBOutlet weak var pageText: UITextView!
-    @IBOutlet weak var pageButtons: UISegmentedControl!
+    @IBOutlet weak var buttonOne: UIButton!
+    @IBOutlet weak var buttonTwo: UIButton!
+    @IBOutlet weak var buttonThree: UIButton!
+    @IBOutlet weak var ButtonFour: UIButton!
     
     
     
