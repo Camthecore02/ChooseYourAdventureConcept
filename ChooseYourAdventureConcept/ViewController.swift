@@ -65,4 +65,4 @@ class ViewController: UIViewController {
 }
 
 }
-
+// Next step: Find out how to change button titles based on previous options. Possible fix: Use the new page file to write multiple stories based on previous buttons.
