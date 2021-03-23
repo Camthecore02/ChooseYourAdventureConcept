@@ -17,16 +17,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonThree: UIButton!
     @IBOutlet weak var ButtonFour: UIButton!
     
+    var currentPage: NewPage = samplePage
     
   
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let samplePage = NewPage(pageImage: "maskedCat", pageText: "Meow",  buttonTitles: ["yes", "no"]
-        )
+//        let samplePage = NewPage(pageImage: "maskedCat", pageText: "Meow",  buttonTitles: ["yes", "no"], buttonLinks: [yesPage, noPage])
+//            let yesPage = NewPage(pageImage: "maskedCat", pageText: "Yes Page", buttonTitles: ["Back to Sample"], buttonLinks: [samplePage])
+//        let noPage = NewPage(pageImage: "maskedCat", pageText: "No Page", buttonTitles: ["Back to Sample"], buttonLinks: samplePage)
+        
+        
+        
         loadPage(whatPage: samplePage)
     }
-    func loadPage(whatPage: NewPage){
+    func loadPage(whatPage: String){
+        currentPage
         pageImage.image = UIImage(named: whatPage.pageImage)
         pageText.text = whatPage.pageText
        
@@ -64,5 +70,8 @@ class ViewController: UIViewController {
         }
 }
 
+    @IBAction func answerTapped(_ sender: UIButton) {
+        loadPage (whatPage: currentPage.buttonLinks[sender.tag])
+    }
 }
 // Next step: Find out how to change button titles based on previous options. Possible fix: Use the new page file to write multiple stories based on previous buttons.
