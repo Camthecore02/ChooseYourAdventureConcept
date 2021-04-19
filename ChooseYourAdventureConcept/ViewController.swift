@@ -100,6 +100,7 @@ class ViewController: UIViewController {
         option3 = false
           desision()
         performSegue(withIdentifier: "segueToSecond", sender: nil)
+        let vc = SecondViewController(nibName: SecondViewController, bundle: nil)
     }
     
     @IBAction func choice2(_ sender: Any) {
