@@ -9,19 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var option1 = false
-    var option2 = false
-    var option3 = false
+ 
     @IBOutlet weak var pageImage: UIImageView!
     @IBOutlet weak var pageText: UITextView!
     @IBOutlet weak var buttonOne: UIButton!
     @IBOutlet weak var buttonTwo: UIButton!
     @IBOutlet weak var buttonThree: UIButton!
-    @IBOutlet weak var ButtonFour: UIButton!
-    
-   // var currentPage: NewPage = samplePage
-   
-   
+
+    @IBOutlet weak var buttonFour: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,37 +28,35 @@ class ViewController: UIViewController {
         
 }
     @IBAction func choice1(_ sender: UIButton) {
-        option1 = true
-        option2 = false
-        option3 = false
-          desision()
-        
-      
+        pageImage.image = UIImage(named: "good")
+        pageText.text = "You've made the ethically good desicion"
+      buttonOne.isHidden = true
+         buttonTwo.isHidden = true
+         buttonThree.isHidden = true
     }
     
     @IBAction func choice2(_ sender: Any) {
-        option2 = true
-        option3 = false
-        option1 = false
-          desision()
+     pageImage.image = UIImage(named: "bad")
+        pageText.text = "You've made the ethically bad desicion"
+        buttonOne.isHidden = true
+        buttonTwo.isHidden = true
+        buttonThree.isHidden = true
     }
     
     @IBAction func choice3(_ sender: Any) {
-        option3 = true
-        option1 = false
-        option2 = false
-          desision()
+        pageImage.image = UIImage(named: "neutral")
+        pageText.text = "You've made the ethically neutral desicion"
+        buttonOne.isHidden = true
+        buttonTwo.isHidden = true
+        buttonThree.isHidden = true
     }
-    func desision(){
-        if option1 == true {
-            pageText.text = "Good Choice"
-        } else if option2 == true {
-            pageText.text = "Bad Choice"
-        }  else if option3 == true{
-            pageText.text = "Neutral"
-        } else {
-            pageText.text = "No"
-        }
+    
+    
+    @IBAction func nextButton(_ sender: Any) {
+        buttonOne.isHidden = false
+        buttonTwo.isHidden = false
+        buttonThree.isHidden = false
     }
+    
 }
 

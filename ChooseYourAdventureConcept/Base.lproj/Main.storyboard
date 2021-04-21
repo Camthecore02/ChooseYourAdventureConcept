@@ -48,30 +48,29 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="65.666666666666671"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
-                                                    <action selector="answerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C5r-5m-sMZ"/>
-                                                    <action selector="choice1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q0L-z2-iaI"/>
+                                                    <action selector="choice1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nhS-DF-sco"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ect-at-4OB">
                                                 <rect key="frame" x="0.0" y="65.666666666666629" width="414" height="65.666666666666686"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
-                                                    <action selector="choice2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FXP-En-g4q"/>
+                                                    <action selector="choice2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BVe-BC-rGj"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E77-tD-28L">
                                                 <rect key="frame" x="0.0" y="131.33333333333337" width="414" height="66"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
-                                                    <action selector="answerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eiB-eC-9mq"/>
-                                                    <action selector="choice3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9GD-J3-fe4"/>
+                                                    <action selector="choice3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dv9-JT-S0N"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfR-Jn-BGz">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjt-uq-XEP">
                                                 <rect key="frame" x="0.0" y="197.33333333333337" width="414" height="65.666666666666686"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
-                                                    <action selector="answerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BZ7-vj-Id5"/>
+                                                    <action selector="choice3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HLf-Ff-7YH"/>
+                                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SDr-wZ-E6w"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -95,7 +94,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="hJd-T5-fL8"/>
                     <connections>
-                        <outlet property="ButtonFour" destination="OfR-Jn-BGz" id="uWR-DD-xnN"/>
+                        <outlet property="buttonFour" destination="rjt-uq-XEP" id="pXe-FZ-heA"/>
                         <outlet property="buttonOne" destination="Gzm-YW-epE" id="avW-65-P6m"/>
                         <outlet property="buttonThree" destination="E77-tD-28L" id="EUa-C5-Tnw"/>
                         <outlet property="buttonTwo" destination="ect-at-4OB" id="KAW-Is-JbH"/>
