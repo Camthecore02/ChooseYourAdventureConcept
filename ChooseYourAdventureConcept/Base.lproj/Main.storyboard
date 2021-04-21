@@ -55,22 +55,21 @@
                                                 <rect key="frame" x="0.0" y="65.666666666666629" width="414" height="65.666666666666686"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
-                                                    <action selector="choice2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BVe-BC-rGj"/>
+                                                    <action selector="choice2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4D3-lx-H8d"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E77-tD-28L">
                                                 <rect key="frame" x="0.0" y="131.33333333333337" width="414" height="66"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
-                                                    <action selector="choice3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dv9-JT-S0N"/>
+                                                    <action selector="choice3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zcf-U7-YeL"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjt-uq-XEP">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfR-Jn-BGz">
                                                 <rect key="frame" x="0.0" y="197.33333333333337" width="414" height="65.666666666666686"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
-                                                    <action selector="choice3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HLf-Ff-7YH"/>
-                                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SDr-wZ-E6w"/>
+                                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OA9-R8-cGD"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -94,7 +93,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="hJd-T5-fL8"/>
                     <connections>
-                        <outlet property="buttonFour" destination="rjt-uq-XEP" id="pXe-FZ-heA"/>
+                        <outlet property="ButtonFour" destination="OfR-Jn-BGz" id="uWR-DD-xnN"/>
+                        <outlet property="buttonFour" destination="OfR-Jn-BGz" id="rYQ-oc-dVd"/>
                         <outlet property="buttonOne" destination="Gzm-YW-epE" id="avW-65-P6m"/>
                         <outlet property="buttonThree" destination="E77-tD-28L" id="EUa-C5-Tnw"/>
                         <outlet property="buttonTwo" destination="ect-at-4OB" id="KAW-Is-JbH"/>
