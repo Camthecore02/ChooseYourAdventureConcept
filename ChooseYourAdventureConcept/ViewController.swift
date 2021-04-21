@@ -21,7 +21,6 @@ class ViewController: UIViewController {
     
    // var currentPage: NewPage = samplePage
     
-    var text: String = ""
    
     
     override func viewDidLoad() {
@@ -99,8 +98,6 @@ class ViewController: UIViewController {
         option2 = false
         option3 = false
           desision()
-        performSegue(withIdentifier: "segueToSecond", sender: nil)
-      
     }
     
     @IBAction func choice2(_ sender: Any) {
