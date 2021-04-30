@@ -7,13 +7,20 @@
 //
 
 import Foundation
-        let samplePage = NewPage(pageImage: "maskedCat", pageText: "Meow",  buttonTitles: ["yes", "no"])
-let yesPage = NewPage(pageImage: "maskedCat", pageText: "Yes Page", buttonTitles: ["Back to Sample"])
-        let noPage = NewPage(pageImage: "maskedCat", pageText: "No Page", buttonTitles: ["Back to Sample"])
+
+
 
 struct NewPage {
     var pageImage: String
     var pageText: String
-    var buttonTitles: [String]
+    //titles
+    var buttonOne: String
+    var buttonTwo: String
+    var buttonThree: String
+    var buttonFour: String
+    //links
+    var buttonOneLink: String
+    var buttonTwoLink: String
+    var buttonThreeLink: String
+    var buttonFourLink: String
 }
-
